@@ -12,7 +12,7 @@ bash run_CLIPstyler.sh
 To change the settings, edit the command 
 ```
 python train_CLIPstyler.py --content_path ./content/face.jpg \
---content_name face --exp_name p128_g500_s9000_th07 \
+--content_name face --exp_name exp1 \
 --text "Fire"
 ```
 
