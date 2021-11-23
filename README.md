@@ -25,7 +25,7 @@ Before training, plase download DIV2K dataset [LINK](https://data.vision.ee.ethz
 
 We recomment to use Training data of High-Resolution(HR) images.
 
-To train the model, please download the pre-trained vgg encoder & decoder models in [LINK]().
+To train the model, please download the pre-trained vgg encoder & decoder models in [LINK](https://drive.google.com/drive/folders/17UDzXtp9IZlerFjGly3QEm2uU3yi7siO?usp=sharing).
 
 Please save the downloaded models in ```./models``` directory
 
@@ -47,4 +47,4 @@ python test_fast.py --test_dir ./test_set --decoder ./model_fast/clip_decoder_it
 
 Change the argument ```--decoder``` to other trained models for testing on different text conditions.
 
-We provide several fine-tuned decoders for several text conditions. [LINK]()
+We provide several fine-tuned decoders for several text conditions. [LINK](https://drive.google.com/drive/folders/1U-4tEigPaJxfXRMnEdRDtyQ99O5ondrs?usp=sharing)
