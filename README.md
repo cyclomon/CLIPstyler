@@ -14,7 +14,7 @@ $ pip install git+https://github.com/openai/CLIP.git
 
 ### Style Transfer with Single-image
 
-To change the settings, edit the command 
+To train the model, run
 
 ```
 python train_CLIPstyler.py --content_path ./content/face.jpg \
@@ -54,3 +54,5 @@ python test_fast.py --test_dir ./test_set --decoder ./model_fast/clip_decoder_it
 Change the argument ```--decoder``` to other trained models for testing on different text conditions.
 
 We provide several fine-tuned decoders for several text conditions. [LINK](https://drive.google.com/drive/folders/1U-4tEigPaJxfXRMnEdRDtyQ99O5ondrs?usp=sharing)
+
+To use high-resolution image, please add ```--hr_dir ./hr_set``` to test command. 
