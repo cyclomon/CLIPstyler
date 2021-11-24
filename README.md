@@ -14,7 +14,7 @@ $ pip install git+https://github.com/openai/CLIP.git
 
 ### Style Transfer with Single-image
 
-To train the model, run
+To train the model and obtain the image, run
 
 ```
 python train_CLIPstyler.py --content_path ./content/face.jpg \
