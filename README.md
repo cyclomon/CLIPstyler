@@ -19,7 +19,7 @@ $ pip install git+https://github.com/openai/CLIP.git
 To train the model and obtain the image, run
 
 ```
-python train_CLIPstyler.py --content_path ./content/face.jpg \
+python train_CLIPstyler.py --content_path ./test_set/face.jpg \
 --content_name face --exp_name exp1 \
 --text "Sketch with black pencil"
 ```
@@ -30,7 +30,7 @@ edit the text condition with ```--text``` argument
 
 For easy demo, we provice Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dg8PXi-TVtzdpbaoI7ty72SSY7xdBgwo?usp=sharing).
 
-*Warning : Due to slow computation speed of colab, it take about several minutes to style transfer.
+*Warning : Due to slow computation speed of colab, it may take several minutes in colab environment
 
 ### Fast Style Transfer
 Before training, plase download DIV2K dataset [LINK](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
