@@ -7,8 +7,10 @@
 Pytorch 1.7.1, Python 3.6
 
 ```
+$ conda create -n CLIPstyler python=3.6
 $ conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
 $ pip install ftfy regex tqdm
+$ conda install -c anaconda git
 $ pip install git+https://github.com/openai/CLIP.git
 ```
 
