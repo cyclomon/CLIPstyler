@@ -9,7 +9,7 @@ from PIL import Image, ImageFile
 from torchvision import transforms
 from tqdm import tqdm
 from template import imagenet_templates
-import net
+import fast_stylenet
 from sampler import InfiniteSamplerWrapper
 import clip
 from template import imagenet_templates
@@ -66,8 +66,8 @@ args = parser.parse_args()
 
 device = torch.device('cuda')
 
-decoder = net.decoder
-vgg = net.vgg
+decoder = fast_stylenet.decoder
+vgg = fast_stylenet.vgg
 vgg.load_state_dict(torch.load(args.vgg))
 vgg = nn.Sequential(*list(vgg.children())[:31])
 
@@ -97,14 +97,14 @@ if args.hr_dir is not None:
     hr_images = hr_images.cuda()
 
 with torch.no_grad():
-    _, _,test_out1 = network( test_images1,None,ext_style=None,decode=True)
+    _, test_out1 = network( test_images1)
     test_out1 = adjust_contrast(test_out1,1.5)
     output_test = torch.cat([test_images1,test_out1],dim=0)
     output_name = './output_test/test.png'
     save_image(output_test, str(output_name),nrow=test_out1.size(0),normalize=True,scale_each=True)
     
     if args.hr_dir is not None:
-        _, _,test_out = network(hr_images,None,ext_style=None,decode=True)
+        _, test_out = network(hr_images)
         test_out = adjust_contrast(test_out,1.5)
         output_name = './output_test/hr.png'
         save_image(test_out, str(output_name),nrow=test_out.size(0),normalize=True,scale_each=True)
