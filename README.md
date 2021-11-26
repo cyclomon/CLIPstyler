@@ -62,3 +62,5 @@ Change the argument ```--decoder``` to other trained models for testing on diffe
 We provide several fine-tuned decoders for several text conditions. [LINK](https://drive.google.com/drive/folders/1U-4tEigPaJxfXRMnEdRDtyQ99O5ondrs?usp=sharing)
 
 To use high-resolution image, please add ```--hr_dir ./hr_set``` to test command. 
+
+We provide colab notebook for testing fast transfer model [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sdvRuBECA48sPPlBb7UTOuk9peGggdI9?usp=sharing)
