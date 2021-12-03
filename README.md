@@ -28,7 +28,7 @@ To change the style of custom image, please change the ```--content_path``` argu
 
 edit the text condition with ```--text``` argument
 
-For easy demo, we provice Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dg8PXi-TVtzdpbaoI7ty72SSY7xdBgwo?usp=sharing).
+For easy demo, we provide Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dg8PXi-TVtzdpbaoI7ty72SSY7xdBgwo?usp=sharing).
 
 *Warning : Due to slow computation speed of colab, it may take several minutes in colab environment
 
