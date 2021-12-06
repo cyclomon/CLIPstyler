@@ -15,7 +15,7 @@ $ pip install git+https://github.com/openai/CLIP.git
 ```
 
 ### Style Transfer with Single-image
-
+We provide demo with replicate.ai 
 <a href="https://replicate.ai/paper11667/clipstyler"><img src="https://img.shields.io/static/v1?label=Replicate&message=Demo and Docker Image&color=blue"></a>
 
 To train the model and obtain the image, run
