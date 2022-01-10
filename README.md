@@ -37,7 +37,7 @@ For easy demo, we provide Google Colab [![Open In Colab](https://colab.research.
 ### Fast Style Transfer
 Before training, plase download DIV2K dataset [LINK](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
 
-We recommend to use Training data of High-Resolution(HR) images.
+We recomment to use Training data of High-Resolution(HR) images.
 
 To train the model, please download the pre-trained vgg encoder & decoder models in [LINK](https://drive.google.com/drive/folders/17UDzXtp9IZlerFjGly3QEm2uU3yi7siO?usp=sharing).
 
