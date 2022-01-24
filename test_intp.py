@@ -77,8 +77,7 @@ device = torch.device('cuda')
 decoder = fast_stylenet.decoder_cls()
 decoder2 = fast_stylenet.decoder_cls()
 decoder_out = fast_stylenet.decoder_cls()
-# for param in decoder2.parameters():
-#     param = param.clone()
+
 vgg = fast_stylenet.vgg
 vgg.load_state_dict(torch.load(args.vgg))
 vgg = nn.Sequential(*list(vgg.children())[:31])
@@ -118,10 +117,9 @@ with torch.no_grad():
         enc_feat = vgg(test_images1)
         test_out1 = decoder_intp(enc_feat)
         
-#         _,test_out1 = network(test_images1)
         test_out1 = adjust_contrast(test_out1,1.5)
         outs.append(test_out1)
-#         output_test = torch.cat([test_images1,test_out1],dim=0)
+        
     output_test = torch.cat(outs,dim=0)
     output_name = './output_test/test_intp.png'
     save_image(output_test, str(output_name),nrow=test_out1.size(0),normalize=True,scale_each=True)
