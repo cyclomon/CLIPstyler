@@ -66,3 +66,20 @@ We provide several fine-tuned decoders for several text conditions. [LINK](https
 To use high-resolution image, please add ```--hr_dir ./hr_set``` to test command. 
 
 We provide colab notebook for testing fast transfer model [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sdvRuBECA48sPPlBb7UTOuk9peGggdI9?usp=sharing)
+
+### Style interpolation on Fast Style Transfer
+
+Style interpolation results with interpolating weight parameters of two fine-tuned decoder models
+
+
+To interpolate the fast style transfer model, 
+
+```
+python test_intp.py --decoder_src $SOURCE_DECODER --decoder_trg $TARGET_DECODER
+```
+
+Put source and target decoder model paths in ```$SOURCE_DECODER``` and ```$TARGET_DECODER```
+
+Style interpolation example with interpolating two styles "Stone wall" and "Desert sand"
+
+![interp_style](https://user-images.githubusercontent.com/94511035/150737816-e1bd4339-16b7-45cc-bdc7-dfc0af7cf306.jpg)
