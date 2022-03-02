@@ -1,5 +1,5 @@
 # CLIPstyler
-## Official Pytorch implementation of "CLIPstyler:Image Style Transfer with a Single Text Condition"
+## Official Pytorch implementation of "CLIPstyler:Image Style Transfer with a Single Text Condition" (CVPR 2022 Accepted)
 
 ![MAIN3_e2-min](https://user-images.githubusercontent.com/94511035/142139437-9d91f39e-b3d7-46cf-b43b-cb7fdead69a8.png)
 
