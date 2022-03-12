@@ -5,6 +5,16 @@ LINK : https://arxiv.org/abs/2112.00374
 
 ![MAIN3_e2-min](https://user-images.githubusercontent.com/94511035/142139437-9d91f39e-b3d7-46cf-b43b-cb7fdead69a8.png)
 
+### Cite
+```
+@article{kwon2021clipstyler,
+  title={Clipstyler: Image style transfer with a single text condition},
+  author={Kwon, Gihyun and Ye, Jong Chul},
+  journal={arXiv preprint arXiv:2112.00374},
+  year={2021}
+}
+```
+
 ### Environment
 Pytorch 1.7.1, Python 3.6
 
