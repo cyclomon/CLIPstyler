@@ -40,7 +40,9 @@ parser.add_argument('--crop_size', type=int, default=128,
                     help='cropped image size')
 parser.add_argument('--num_crops', type=int, default=64,
                     help='number of patches')
-parser.add_argument('--img_size', type=int, default=512,
+parser.add_argument('--img_width', type=int, default=512,
+                    help='size of images')
+parser.add_argument('--img_height', type=int, default=512,
                     help='size of images')
 parser.add_argument('--max_step', type=int, default=200,
                     help='Number of domains')
@@ -51,6 +53,9 @@ parser.add_argument('--thresh', type=float, default=0.7,
 args = parser.parse_args()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+assert (args.img_width%8)==0, "width must be multiple of 8"
+assert (args.img_height%8)==0, "height must be multiple of 8"
 
 VGG = models.vgg19(pretrained=True).features
 VGG.to(device)
@@ -101,7 +106,7 @@ def compose_text_with_templates(text: str, templates=imagenet_templates) -> list
     return [template.format(text) for template in templates]
 
 content_path = args.content_path
-content_image = utils.load_image2(content_path, img_size=512)
+content_image = utils.load_image2(content_path, img_height=args.img_height,img_width=args.img_width)
 content = args.content_name
 exp = args.exp_name
 
