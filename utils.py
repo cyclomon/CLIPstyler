@@ -20,7 +20,7 @@ def load_image(img_path, img_size=None):
 def load_image2(img_path, img_height=None,img_width =None):
     
     image = Image.open(img_path)
-    if img_size is not None:
+    if img_width is not None:
         image = image.resize((img_width, img_height))  # change image size to (3, img_size, img_size)
     
     transform = transforms.Compose([
