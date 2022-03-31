@@ -95,3 +95,18 @@ Put source and target decoder model paths in ```$SOURCE_DECODER``` and ```$TARGE
 Style interpolation example with interpolating two styles "Stone wall" and "Desert sand"
 
 ![interp_style](https://user-images.githubusercontent.com/94511035/150737816-e1bd4339-16b7-45cc-bdc7-dfc0af7cf306.jpg)
+
+### Video style transfer with Fast model
+
+For video style transfer, first install video io package
+```
+$ pip install imageio-ffmpeg
+$ conda install -c conda-forge/label/cf202003 opencv
+```
+
+Then run the following command,
+
+```
+python test_video.py --content_path $VIDEO_PATH$ --decoder $DECODER_PATH$
+```
+
