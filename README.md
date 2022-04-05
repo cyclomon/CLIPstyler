@@ -1,6 +1,6 @@
 # CLIPstyler
 ## Official Pytorch implementation of "CLIPstyler:Image Style Transfer with a Single Text Condition" (CVPR 2022 Accepted)
-
+### [Gihyun Kwon](https://sites.google.com/view/gihyunkwon), Jong Chul Ye
 LINK : https://arxiv.org/abs/2112.00374
 
 ![MAIN3_e2-min](https://user-images.githubusercontent.com/94511035/142139437-9d91f39e-b3d7-46cf-b43b-cb7fdead69a8.png)
