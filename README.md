@@ -58,7 +58,7 @@ Please save the downloaded models in ```./models``` directory
 Then, run the command
 
 ```
-python train_fast.py --content_path $DIV2K_DIR$ \
+python train_fast.py --content_dir $DIV2K_DIR$ \
 --name exp1 \
 --text "Sketch with black pencil" --test_dir ./test_set
 ```
