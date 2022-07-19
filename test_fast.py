@@ -9,7 +9,7 @@ from PIL import Image, ImageFile
 from torchvision import transforms
 from tqdm import tqdm
 from template import imagenet_templates
-import fast_stylenet
+import fast_stylenet 
 from sampler import InfiniteSamplerWrapper
 import clip
 from template import imagenet_templates
@@ -73,7 +73,7 @@ vgg = nn.Sequential(*list(vgg.children())[:31])
 
 decoder.load_state_dict(torch.load(args.decoder))
 
-network = net.Net(vgg, decoder)
+network = fast_stylenet.Net(vgg, decoder)
 network.eval()
 network.to(device)
 
